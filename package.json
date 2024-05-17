@@ -1,4 +1,17 @@
 {
-  "name": "temp-project",
-  "packageManager": "yarn@4.2.2"
+  "name": "@temp/temp-project",
+  "packageManager": "yarn@4.2.2",
+  "bin": {
+    "temp": "./temp.js"
+  },
+  "workspaces": [
+    "./runme"
+  ],
+  "dependencies": {
+    "@temp/runme": "workspace:*"
+  },
+  "scripts": {
+    "run": "temp"
+  },
+  "private": true
 }

@@ -11,3 +11,7 @@
 
 #!.yarn/cache
 .pnp.*
+/.idea/.gitignore
+/.idea/modules.xml
+/.idea/temp-project.iml
+/.idea/vcs.xml

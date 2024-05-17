@@ -5,8 +5,20 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"temp-project@workspace:.":
+"@temp/runme@workspace:*, @temp/runme@workspace:runme":
   version: 0.0.0-use.local
-  resolution: "temp-project@workspace:."
+  resolution: "@temp/runme@workspace:runme"
+  bin:
+    runme: index.js
+  languageName: unknown
+  linkType: soft
+
+"@temp/temp-project@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@temp/temp-project@workspace:."
+  dependencies:
+    "@temp/runme": "workspace:*"
+  bin:
+    temp: ./temp.js
   languageName: unknown
   linkType: soft
